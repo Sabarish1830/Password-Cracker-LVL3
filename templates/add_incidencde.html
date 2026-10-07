@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Incident</title>
+</head>
+
+<body>
+
+    <h2>Report Cybersecurity Incident</h2>
+
+    <form method="POST">
+
+        <label>Incident Title:</label><br>
+        <input type="text" name="title" required>
+
+        <br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description" required></textarea>
+
+        <br><br>
+
+        <label>Severity:</label><br>
+
+        <select name="severity">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <br><br>
+
+        <label>Status:</label><br>
+
+        <select name="status">
+            <option value="Open">Open</option>
+            <option value="Investigating">Investigating</option>
+            <option value="Resolved">Resolved</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Report Incident</button>
+
+    </form>
+
+    <br>
+
+    <a href="/dashboard">Back to Dashboard</a>
+
+</body>
+
+</html>
